@@ -27,5 +27,5 @@ jobs:
       - name: build multi-arch image and push to docker hub
         run: |
           docker buildx build --push \
-            --tag biju-ps/netcore3.1:focal  \
+            --tag bijups/netcore3.1:focal  \
             --platform linux/amd64,linux/arm64 .
